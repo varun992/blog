@@ -12,6 +12,7 @@ https://docs.djangoproject.com/en/3.2/ref/settings/
 
 from pathlib import Path
 from environs import Env
+import django_heroku
 
 env = Env()
 env.read_env()
@@ -146,3 +147,5 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
 #Email setup
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+django_heroku.settings(locals())
