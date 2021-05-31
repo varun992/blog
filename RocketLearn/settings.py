@@ -49,6 +49,7 @@ INSTALLED_APPS = [
     'blog',
     #3rd part apps
     'crispy_forms',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [
@@ -148,7 +149,7 @@ CRISPY_TEMPLATE_PACK = 'bootstrap4'
 #Email setup
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 
-django_heroku.settings(locals())
+#django_heroku.settings(locals())
 
 CSRF_COOKIE_SECURE = True
 

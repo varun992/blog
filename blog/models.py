@@ -2,12 +2,13 @@ from django.db import models
 from django.conf import  settings
 from django.contrib.auth import get_user_model
 from django.urls import reverse
+from ckeditor.fields import RichTextField as RF
 
 #models to hold blog data
 
 class Blog(models.Model):
 	title = models.CharField(max_length=225)
-	body = models.TextField()
+	body = RF(blank=True, null=True)
 	date = models.DateTimeField(auto_now_add=True)
 	author = models.ForeignKey(
 		get_user_model(),

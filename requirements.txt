@@ -4,3 +4,4 @@ django-heroku
 psycopg2
 environs[django]
 django-crispy-forms
+django-ckeditor
