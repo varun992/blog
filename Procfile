@@ -1,1 +1,1 @@
-web: gunicorn rocketlearn.wsgi --log-file -
+web: gunicorn RocketLearn.wsgi
